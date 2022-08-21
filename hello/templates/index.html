@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{%block head%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+{%endblock head%}
+{% block body %} 
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/homepage.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to IIT INDORE Alumni Portal</h5>
+          <p><a href="/register" class="btn btn-warning mt-3">Create Your Profile</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/pic1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to IIT INDORE Alumni Portal</h5>
+            <p><a href="/register" class="btn btn-warning mt-3">Create Your Profile</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/pic2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to IIT INDORE Alumni Portal</h5>
+            <p><a href="/register" class="btn btn-warning mt-3">Create Your Profile</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section class="about section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-12">
+                <div class="about-img"><img alt="" class="img-fluid" src="static/pic3.jpg"></div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <div class="about-text">
+                    <h2>Message From the Director</h2>
+                    <p>World over, the most acclaimed universities and institutions boast of having a strong and vibrant alumnus base.
+                        The alumni network of IIT Indore forms a very important and significant element to propel the institute towards excellence in all spheres of science, technology, humanity and social sciences, and in producing leaders.
+                        IIT Indore has been fortunate, right from its first graduating batch, to have a robust institute- alumni network, which we must all nurture and see its exponential growth in all dimensions.
+                        With the very best wishes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services section-padding2" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Upcoming Event : Magnum Opus 2022</h2>
+                    <br>
+                    <p>We are all set to organize Magnum Opus 2022, the fifth edition of Alumni Meet on 8th and 9th Nov 2022. We are organizing a two-day event where the second day is an informal Reunion for batch 2009 and 2010 celebrating the decennial anniversary of the batches.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-white text-center bg-dark pb-1">
+                    <div class="card-body">
+                        <i class="bi bi-laptop"></i>
+                        <h3 class="card-title">Register Now</h3>
+                        <p class="lead">Register for Magnum Opus & get all the updates about the meet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-white text-center bg-dark pb-1">
+                    <div class="card-body">
+                        <i class="bi bi-person-plus-fill"></i>
+                        <h3 class="card-title">Volunteer</h3>
+                        <p class="lead">Volunteer for Alumni Meet & contribute towards making it a huge success</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-white text-center bg-dark pb-1">
+                    <div class="card-body">
+                        <i class="bi bi-share-fill"></i>
+                        <h3 class="card-title">Invite</h3>
+                        <p class="lead">Invite your friends to join the Alumni Portal & register for Alumni Meet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-white text-center bg-dark pb-1">
+                    <div class="card-body">
+                        <i class="bi bi-telephone-outbound-fill"></i>
+                        <h3 class="card-title">Get In Touch</h3>
+                        <p class="lead">Contact us for more details and regular updates about the program</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<section class="team section-padding" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="section-header text- pb-5">
+                    <h2 style="padding-top: 20px;">Alumni Cell Updates</h2>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="section-header text-right pb-5">
+                    <p><a href="#" class="btn btn-warning mt-3">View All</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img alt="" class="img-fluid" src="static/gaurav.jpg">
+                        <h5 class="card-title py-2">Gaurav Parchani's Dozee Healthtech Goes Global!</h5>
+                        <p><a href="#" class="btn btn-warning mt-3">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img alt="" class="img-fluid" src="static/magzine.jpg">
+                        <h5 class="card-title py-2">Alumni Magazine 2019 (Decennial celebration Edition)</h5>
+                        <p><a href="#" class="btn btn-warning mt-3">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img alt="" class="img-fluid" src="static/event.jpg">
+                        <h5 class="card-title py-2">INSTITUTE INSIGHTS || THE TECHNOBER</h5>
+                        <p><a href="#" class="btn btn-warning mt-3">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contactus section-padding2" id="contactus">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-4">
+                <div class="about-img"><img alt="" class="img-fluid" src="static/logo.png" width="300" height="200" style="padding-left: 80px; padding-top: 40px; padding-bottom: 100px;"></div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <div class="about-text">
+                    <h3 style="padding-top:10px ;">Contact Us</h3>
+                    <p style="padding-top:10px ;"> Alumni and Corporate Relations Office,
+                        7th floor,<br> Abhinandan Bhavan,
+                        Indian Institute of Technology Indore,<br>
+                        Khandwa Road, Simrol,
+                        Indore-453552
+                        India
+                    </p>
+                    <i class="bi bi-telephone">&ensp;+91-731-6603122/+91-731-6603555
+                    </i>
+                    <br>
+                    <i class="bi bi-envelope">&ensp;alumnicell@iiti.ac.in/acroffice@iiti.ac.in
+                    </i>
+                    <br>
+                    <a href="https://www.facebook.com/iitialumnicell/" title="Facebook" target="blank"> <i class="bi bi-facebook"></i></a>
+                    <a href="https://in.linkedin.com/company/alumni-cell-iit-indore?original_referer=https%3A%2F%2Falumni.iiti.ac.in%2F" title="LinkedIn" target="blank"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark p-2 text-center section-padding">
+    <div class="container1">
+      <p class="text-white">All Right Reserved By IIT Indore</p>
+    </div>
+  </footer>
+  </div>
+{% endblock body %}
