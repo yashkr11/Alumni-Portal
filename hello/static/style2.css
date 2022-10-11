@@ -7,6 +7,17 @@ body{
   align-items: center;
   justify-content: center;
 }
+.container2{
+  background-color: lightgrey;
+  border: 10px solid black;
+  padding: 50px;
+  margin: 10%;
+  position: absolute;
+  top :40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .container{
   width: 85%;
   background: #fff;

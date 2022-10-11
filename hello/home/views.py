@@ -1,7 +1,11 @@
 from django.shortcuts import render, HttpResponse
 from home.models import Contact,Register
 from datetime import datetime
+from home.models import AlumniStory
+from home.models import Story
+from home.models import ViewStory
 def index(request):
+
     context= {
         'variable' : "This is sent"
     }
@@ -35,3 +39,25 @@ def register(request):
      register=Register(name=name, roll=roll,year=year, email=email, phone=phone, date=datetime.today())
      register.save()
     return render (request,'register.html')
+
+def Alumni_Stories(request):
+    storys=AlumniStory.objects.all()
+    ctx = {'storys':storys}
+    return render(request,'stories.html',ctx)
+
+def ReadStory (request, story_id):
+    if story_id:
+        try:
+            read_story = Story.objects.get(id=story_id)
+            print(read_story)
+            return render(request, 'read.html', { 'read_story': read_story})
+        except:
+            return HttpResponse('Story does not exist')
+    reads = Story.objects.all()
+    read_story = ViewStory.objects.get(id=story_id)
+    context = {
+        'reads': reads
+    }
+    print(reads)
+    return render(request, 'read.html',context)
+    
